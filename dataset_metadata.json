@@ -1,0 +1,37 @@
+{
+    "dataset_name": "Primary School Enrollment vs GDP per Capita (2001-2020)",
+    "description": "Merged dataset showing primary school enrollment and GDP per capita for one country from 2001 to 2020.",
+    "country": "Brazil",
+    "file_name": "primary_enrollment_gdp_2001_2020.csv",
+    "columns": [
+        {
+            "name": "Country",
+            "type": "string",
+            "description": "Full country name."
+        },
+        {
+            "name": "Country_Code",
+            "type": "string",
+            "description": "ISO 3-letter country code."
+        },
+        {
+            "name": "Year",
+            "type": "integer",
+            "description": "Calendar year (2001\u20132020)."
+        },
+        {
+            "name": "Primary_Enrollment",
+            "type": "float",
+            "description": "Total primary school enrollment for that year (number of students)."
+        },
+        {
+            "name": "GDP_per_capita",
+            "type": "float",
+            "description": "GDP per capita in current US dollars for that year."
+        }
+    ],
+    "source": {
+        "education": "World Bank, API_SE.PRM.ENRL_DS2 dataset",
+        "gdp": "World Bank, WDI indicator GDP per capita"
+    }
+}
